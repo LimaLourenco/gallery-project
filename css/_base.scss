@@ -1,0 +1,56 @@
+$primary-color: #fff;
+$second-color: #20c997;
+$text-color: #777;
+$bg-color: #000;
+$container-width: 1170px;
+
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $bg-color;
+  color: $text-color;
+
+  a {
+    color: $text-color;
+    text-decoration: none;
+    transition: 3s;
+  }
+
+  ul {
+    list-style: none;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  @extend .container;
+
+  .header-brand {
+    color: $primary-color;
+    font-size: 3rem;
+  }
+}
+
+ul {
+  height: 100%;
+  @extend .flex-center;
+}
+
+li {
+  margin: 0 1rem;
+  text-transform: uppercase;
+}
+
+.active {
+  color: $primary-color;
+
+  &:hover {
+    color: $second-color;
+  }
+}
