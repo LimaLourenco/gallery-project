@@ -18,7 +18,7 @@ body {
   a {
     color: $text-color;
     text-decoration: none;
-    transition: 3s;
+    transition: 2s;
   }
 
   ul {
@@ -52,5 +52,228 @@ li {
 
   &:hover {
     color: $second-color;
+  }
+}
+
+.header-social-media ul {
+  @extend .flex-center;
+  height: 100%;
+
+  li {
+    margin: 0 1rem;
+
+    a {
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  max-width: $container-width;
+  padding: 0;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  // seria o gallery-card.
+  &-card {
+    width: 31%;
+    height: 400px;
+    margin-bottom: 4%;
+    @extend .flex-center;
+    flex-direction: column;
+    color: $primary-color;
+
+    .gallery-card-title {
+      font-size: 2rem;
+      font-weight: 300;
+      margin-bottom: 1rem;
+    }
+
+    .gallery-card-btn {
+      padding: 0.6rem 2rem;
+      border: 2px solid $primary-color;
+      color: $primary-color;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+
+      &:hover {
+        background-color: $primary-color;
+        color: $bg-color;
+      }
+    }
+  }
+}
+
+#card1 {
+  background-image: url(../img/animais.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+
+  &:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/animais.jpg");
+  }
+}
+
+#card2 {
+  background-image: url(../img/arquitetura.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+
+  &:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/arquitetura.jpg");
+  }
+}
+
+#card3 {
+  background-image: url(../img/cidade.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+
+  &:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cidade.jpg");
+  }
+}
+
+#card4 {
+  background-image: url(../img/decoracao.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+
+  &:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/decoracao.jpg");
+  }
+}
+
+#card5 {
+  background-image: url(../img/esportes.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+
+  &:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/esportes.jpg");
+  }
+}
+
+#card6 {
+  background-image: url(../img/natureza.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+
+  &:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/natureza.jpg");
+  }
+}
+
+#card7 {
+  background-image: url(../img/paisagem.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+
+  &:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/paisagem.jpg");
+  }
+}
+
+#card8 {
+  background-image: url(../img/refeicoes.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+
+  &:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/refeicoes.jpg");
+  }
+}
+
+#card9 {
+  background-image: url(../img/pessoas.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+
+  &:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pessoas.jpg");
+  }
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 2rem;
+
+  span {
+    font-weight: bold;
+    color: $second-color;
+  }
+}
+
+@media (max-width: 425px) {
+  .header {
+    padding: 1.1rem;
+  }
+
+  .header-navbar ul {
+    display: none;
+  }
+
+  .header-social-media {
+    display: none;
+  }
+
+  .gallery {
+    flex-direction: column;
+  }
+
+  .gallery-card {
+    width: 90%;
+    margin-bottom: 6%;
   }
 }
